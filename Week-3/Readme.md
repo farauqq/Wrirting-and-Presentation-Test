@@ -31,7 +31,7 @@
   - Apabila menggunakan let, array dapat diubah dengan nilai yang baru
   - Const tidak dapat melakukan update data. Namun dapat melakukan update konten nilai di dalam array
   - Tidak dapat mengubah array dengan array baru jika menggunakan const
-  ``` 
+  ```javascript
   const cars = ['tesla', 'bmw', 'nissan'];
   cars[2] = ['mercy'];
   console.log(cars)// output : ['tesla','bmw','mercy']
@@ -45,45 +45,45 @@
 - Array Method<br /> Array memiliki method atau biasa disebut built-in methods.
 - Contoh array built in method :
     - .push adalah method untuk menambahkan item array pada urutan yang paling akhir  
-      ```
+      ```javascript
       let cars = ['tesla', 'bmw', 'mercy'];
       cars.push('hyundai')
       console.log(cars) // output:['tesla','bmw','mercy','hyundai']
       ```
     - .pop adalah method yang menghapus item array index terakhir
-      ``` 
+      ```javascript
       let cars = ['tesla', 'bmw', 'mercy'];
       cars.pop()
       console.log(cars) // output: ['tesla','mercy']
       ```
     - .shift adalah method untuk menghapus item array pada index pertama 
-      ``` 
+      ````javascript 
       let cars = ['tesla', 'bmw', 'mercy'];
       cars.shift()
       console.log(cars) // output: ['bmw', 'mercy']
       ```
     - .unshift adalah method untuk menambahkan array pada index pertama 
-      ``` 
+      ````javascript 
       let cars = ['tesla', 'bmw', 'mercy'];
       cars.unshift('ferrari')
       console.log(cars) // output:['ferrari','tesla','bmw','mercy']
       ```
      - .sort adalah method untuk mengurutkan array secara ascending atau descending
-       ``` 
+       ```javascript
        const numbers = [1,5,6,7,4];
        numbers.sort();
        console.log(numbers) // output : [1,4,5,6,7]
        ```
 - Looping pada Array<br /> Built in methods untuk melakukan looping pada array ada .map dan .forEach
     - .forEach adalah method untuk melakukan looping pada setiap elemen array 
-      ```
+      ```javascript
       const cars = ['tesla', 'bmw', 'mercy'];
       cars.forEach(element => {
       console.log(element);
       }); // output: 'tesla', 'bmw', 'mercy'
       ```
     - .map adalah method untuk melakukan perulangan dengan membuat array baru
-      ```
+      ```javascript
       let arr = [1,2,3,4,5];
     
       let doubled = arr.map(num => {
@@ -93,7 +93,7 @@
       ```
    #### Multidimensional Array
 - Multidimensional Array bisa dianalogikan dengan array of array. Ada array didalam array.
-    ```
+    ```javascript
     let inventory = [
         ['Kaos Polos' , 10],
         ['Jaket' , 5],
@@ -103,7 +103,7 @@
     console.log(inventory);
     ```
 - Mengakses index multidimensional array
-     ```
+     ```javascript
     let inventory = [
         ['Kaos Polos' , 10],
         ['Jaket' , 5],
@@ -113,7 +113,7 @@
     console.log(inventory[1][0]);
     ```
 - Penggunaan built in method pada multidimensional array
-    ```
+    ````javascript
     let inventory = [
         ['Kaos Polos' , 10],
         ['Jaket' , 5],
@@ -124,7 +124,7 @@
     console.log(inventory);
     ```
 - Operation using map in multidimensional array
-    ```
+    ````javascript
     let inventory = [
         ['Kaos Polos' , 10],
         ['Jaket' , 5],
@@ -138,7 +138,7 @@
     console.table(inventory);
     ```
 - Looping for Multidimensional array
-    ```
+    ```javascript
     let inventory = [
         ['Kaos Polos' , 10],
         ['Jaket' , 5],
@@ -221,7 +221,7 @@
 ## JS Intermediate - Rekrusif dan Modules
 - Recursive adalah function yang memanggil dirinya sendiri sampai kondisi tertentu.
 - Struktur Rekrusif
-  ```
+  ```javascript
   function Rekrusif(){
       // ...
       recrsive();
@@ -232,7 +232,7 @@
   - Fungsi rekursif selalu memiliki kondisi yang menyatakan kapan fungsi tersebut berhenti. Kondisi ini harus dapat dibuktikan akan tercapai, karena jika tidak tercapai maka kita tidak dapat membuktikan bahwa fungsi akan berhenti, yang berarti algoritma kita tidak benar.
   - Fungsi rekursif selalu memanggil dirinya sendiri sambil mengurangi atau memecahkan data masukan setiap panggilannya. Hal ini penting diingat, karena tujuan utama dari rekursif ialah memecahkan masalah dengan mengurangi masalah tersebut menjadi masalah-masalah kecil.
 - Contoh kasus rekursif (Mencari hasil dari nilai pangkat dengan rekursif)
-  ```
+  ```javascript
   function pow(x, n) {
       if (n = 1) {
           return x;
@@ -244,7 +244,7 @@
   ```
    #### Modules
 - Modules adalah cara untuk memisahkan kode ke file yang berbeda. Keuntungan dari modules yaitu mudah untuk mengelola kode serta kode tidak menumpuk di dalam satu file. Terdapat 2 kata kunci pada modules yaitu export dan import. Contoh :
-  ```
+  ```javascript
   // File Jepang.js
   export let motor = ["suzuki", "yamaha", "honda", "kawasaki"]
   
@@ -350,7 +350,7 @@
   1. `setTimeout(function, milliseconds)` digunakan untuk simulasi pemanggilan kembali proses asynchronous yang sedang/sudah selesai dijalankan. Pemanggilan hanya dilakukan 1 kali.
   2. `setInterval(function, milliseconds)` digunakan untuk simulasi pemanggilan proses asynchronous yang sedang/sudah dijalankan dalam interval waktu tertentu. Pemanggilan dilakukan berkali-kali sesuai interval waktu yang ditentukan.
 - Contoh asynchronous menggunakan `setTimeout()`:
-  ```
+  ```javascript
   setTimeout(() => {
     console.log("Cuci baju"); // proses asynchronous
   }, 1000);
@@ -367,7 +367,7 @@
   // Cuci baju
   ```
 - Contoh asynchronous menggunakan `setInterval()`:
-  ```
+  ```javascript
   setInterval(() => {
     console.log("Cuci baju"); // proses asynchronous
   }, 3000);
