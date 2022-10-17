@@ -138,7 +138,6 @@ Git organization merupakan sebuah wadah yang disediakan oleh github untuk dapat 
   - Align items : digunakan untuk mengatur align dari item child secara vertikal atau cross axis.
 - Grid merupakan sistem tata letak berbasis dua dimensi.
 - Pada Grid ada 2 jenis yaitu grid container dan grid item.
-
 ## Bootstrap
 - Awalnya bootstrap dibuat dan dikembangkan oleh Developer Twitter yaitu Mark Otto dan Jacob Thornton. Sebelum dikenal dengan nama Bootstrap seperti sekarang, awalnya bernama Blueprint Twitter.
 - Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML dan CSS untuk tipografi, formulir, tombol, navigasi, dan komponen antarmuka lainnya, serta juga ekstensi opsional JavaScript.
@@ -154,10 +153,10 @@ Git organization merupakan sebuah wadah yang disediakan oleh github untuk dapat 
     ```
 - Komponen Bootstrap sebagian besar dibangun dengan base-modifier nomenclature.Contohnya mengelompokkan beberapa properti kedalam kelas dasar seperti .btn, seperti .btn-primary or .btn-success.
 - Layout pada boostrap :
-<br>Breakpoints merupakan suatu cara yang dilakukan untuk membuat desain responsif dengan mengontrol kapan tata letak yang disesuaikan dengan ukuran perangkat tertentu.
+<br>Breakpoint adalah ukuran lebar yang menentukan tampilan responsif terhadap ukuran viewport perangkat tertentu.
     - Breakpoints pada bootstrap ada 6 yaitu xs, sm, md, lg, xl dan xxl.
     - Setiap breakpoint dipilih untuk menampung container yang lebarnya 12 dengan sehingga tersusun rapi. Breakpoint juga mewakili subset ukuran perangkat umum dan dimensi area pandang.
- - Container adalah sebuah elemen yang dapat digunakan untuk membuat responsive web design. Container dapat digunakan untuk membuat responsive web design.
+ - Container adalah fondasi dasar dari blok layout. Container berfungsi untuk membungkus blok di dalamnya, sehingga terlihat rapi terhadap ukuran layar.
 - Terdapat 3 container pada boostrap yaitu :
     - .container, yang menerapkan lebar maksimum pada setiap breakpoint responsif
     - .container-{breakpoint}, menerapkan lebar 100% sampai dengan breakpoint yang ditentukan.
