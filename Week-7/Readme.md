@@ -1,5 +1,5 @@
-# Writing Test Week 6
-#### React Js Lanjutan - Prop Types
+# Writing Test Week 7
+### React Js Lanjutan - Prop Types
 - PropTypes merupakan sebuah lib yang dapat membantu untuk memeriksa data props yang dikirim agar sesuai dengan ekspetasi. Apabila tidak sesuai, maka akan muncul pesan error.
 - Install Prop Types<br>
   `npm install prop-types`
@@ -37,7 +37,7 @@
     };
     export default App;
     ```
-#### React Router 6
+### React Router 6
 - React Router merupakan standar routing yang digunakan sebagai library React JS untuk mengarahkan website dari page satu ke page lainnya. React Router 6 adalah versi terbaru dari React Router.
 - Instalasi React Router
   - Untuk menambahkan react router hal yang harus dilakukan adalah menginstall dependensinnya, menginstallnya bisa menggunakan:
@@ -84,7 +84,7 @@
     <Route path="/books/:id" element={<Book />} />
   </Routes>
   ```
-#### State Management - React Redux
+### State Management - React Redux
 - Redux adalah sebuah aplikasi state management. State management adalah cara untuk memfasilitasi komunikasi dan berbagai data lintas komponen.
 - Intalasi Redux<br>
 Untuk menambahkan redux  hal yang harus dilakukan adalah menginstall dependensinnya: `npm install redux react-redux`
@@ -123,7 +123,7 @@ Untuk menambahkan redux  hal yang harus dilakukan adalah menginstall dependensin
     }
     ```
       
-#### Async Actions with Middleware and Thunk
+### Async Actions with Middleware and Thunk
 - Redux Thunk adalah middleware yang memungkinkan memanggil pembuat aksi yang mengembalikan fungsi sebagai ganti objek aksi. Fungsi itu menerima metode pengiriman penyimpanan, yang kemudian digunakan untuk mengirim aksi sinkron di dalam isi fungsi setelah operasi asinkron selesai.
 - Intalasi Thunk<br>
 Untuk menambahkan redux thunk hal yang harus dilakukan adalah:
